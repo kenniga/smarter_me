@@ -1,0 +1,117 @@
+/* 
+ * OVERRIDE UI-KIT ONLY ON THIS FILE
+ * TO TRACK CHANGES HAVE BEEN MADE
+ * PLACE CSS PROPERTY HERE
+ */
+@media (max-width: $breakpoint-medium - 1) {
+	iframe {
+		&.uk-cover {
+			pointer-events: auto;
+		}
+	}
+}
+
+@media (min-width: $breakpoint-medium) {
+	.uk-width-1-12\@m {
+		width: calc(1/12 * 100%);
+	}
+	.uk-width-7-12\@m {
+		width: calc(7/12 * 100%);
+	}
+	.uk-width-5-12\@m {
+		width: calc(5/12 * 100%);
+	}
+}
+
+.uk-flex-stretch {
+	.uk-c-flex-stretch {
+		height: 100%;
+	}
+}
+
+.uk-c-flex-top {
+	.de-column {
+		> div {
+			align-items: flex-start;
+		}
+	}
+}
+.uk-c-flex-middle {
+	.de-column {
+		> div {
+			align-items: center;
+		}
+	}
+}
+.uk-c-flex-bottom {
+	.de-column {
+		> div {
+			align-items: flex-end;
+		}
+	}
+}
+
+.uk-c-flex-first {
+	.de-column {
+		&:last-child {
+			order: -1;
+		}
+	}
+}
+.uk-c-position-z-index-0  {
+	z-index: 0;
+}
+
+.uk-background {
+	&-repeatx {
+		background-repeat: repeat-x;
+	}
+	&-repeaty {
+		background-repeat: repeat-y;
+	}
+}
+
+.uk-position-top-center-out {
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	&.uk-position {
+		&-small {
+			transform: translateX(-50%) translateX(-10px);
+		}
+		&-medium {
+			transform: translateX(-50%) translateX(-20px);
+		}
+		&-large {
+			transform: translateX(-50%) translateX(-50px);
+		}
+	}
+}
+
+.uk-position-bottom-center-out {
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	&.uk-position {
+		&-small {
+			transform: translateX(-50%) translateX(-10px);
+		}
+		&-medium {
+			transform: translateX(-50%) translateX(-20px);
+		}
+		&-large {
+			transform: translateX(-50%) translateX(-50px);
+		}
+	}
+}
+
+.admin-bar {
+	.uk-lightbox-toolbar {
+		margin-top: 46px;
+		@media (min-width: $breakpoint-medium) {
+			margin-top: 32px;
+		}
+	}
+}

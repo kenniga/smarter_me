@@ -1,0 +1,67 @@
+/*
+ * OVERRIDE UI-KIT ONLY ON THIS FILE
+ * TO TRACK CHANGES HAVE BEEN MADE
+ * PLACE CSS VARIABLE HERE
+ */
+
+$global-gutter                        : 20px !default;
+$global-small-gutter                  : 10px !default;
+$global-medium-gutter                 : 30px !default;
+$global-large-gutter                  : 40px !default;
+
+$global-small-margin                  : $global-small-gutter !default;
+$global-medium-margin                 : $global-medium-gutter !default;
+$global-large-margin                  : $global-large-gutter !default;
+
+// GRID
+// HORIZONTAL base
+$grid-gutter-horizontal               : $global-gutter !default;
+$grid-small-gutter-horizontal         : $global-small-gutter !default;
+$grid-medium-gutter-horizontal        : $global-medium-gutter !default;
+$grid-large-gutter-horizontal         : $global-large-gutter !default;
+
+// HORIZONTAL @media desktop
+$grid-gutter-horizontal-l             : $global-gutter !default;
+$grid-small-gutter-horizontal-l       : $global-small-gutter !default;
+$grid-medium-gutter-horizontal-l      : $global-medium-gutter !default;
+$grid-large-gutter-horizontal-l       : $global-large-gutter !default;
+
+// VERTICAL base
+$grid-gutter-vertical                 : $global-gutter !default;
+$grid-small-gutter-vertical           : $global-small-gutter !default;
+$grid-medium-gutter-vertical          : $global-medium-gutter !default;
+$grid-large-gutter-vertical           : $global-large-gutter !default;
+
+// VERTICAL @media desktop
+$grid-gutter-vertical-l               : $global-gutter !default;
+$grid-small-gutter-vertical-l         : $global-small-gutter !default;
+$grid-medium-gutter-vertical-l        : $global-medium-gutter !default;
+$grid-large-gutter-vertical-l         : $global-large-gutter !default;
+
+// BREADCRUMB
+$breadcrumb-divider-margin-horizontal : 5px !default;
+$breadcrumb-item-active-color         : inherit !default;
+$breadcrumb-divider-color             : inherit !default;
+
+// CODE
+$base-code-font-size                  : inherit !default;
+$base-code-color                      : inherit !default;
+
+// FORM
+$form-background                      : transparent !default;
+$form-focus-background                : transparent !default;
+
+// INS
+$base-ins-color                       : inherit !default;
+
+$card-header-padding-horizontal-l     : $global-gutter !default;
+$card-default-background              : #fff;
+
+$container-padding-horizontal         : 10px !default;
+$base-heading-margin-top              : 0px !default;
+$base-em-color                        : inherit !default;
+$base-link-hover-text-decoration      : none !default;
+
+// NOTIFICATION
+$notification-message-padding         : 0;
+$notification-width                   : 500px;

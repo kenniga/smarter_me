@@ -1,14 +1,20 @@
 var gulp = require('gulp');
+var cleanCSS = require("gulp-clean-css");
+var minify   = require('gulp-minify');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
-  'bower_components/normalize.scss/sass',
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'node_modules/uikit/src/scss',
+];
+var jsPaths = [
+  'node_modules/uikit/dist/js/uikit.js',
 ];
 
 gulp.task('sass', function() {
-  return gulp.src('scss/app.scss')
+  return gulp.src('src/scss/app.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'expanded' // if css compressed **file size**
@@ -17,12 +23,18 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(gulp.dest('../dist/css/'));
+    .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('default', ['sass'], function () {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
-  gulp.watch(['scss/**/**/*.scss'], ['sass']);
-  gulp.watch(['../../dahz-modules/**/assets/scss/**/*.scss'], ['sass']);
-  gulp.watch(['../../dahz-modules/**/assets/scss/*.scss'], ['sass']);
+gulp.task('scripts', function() {
+  gulp.src(['node_modules/uikit/dist/js/uikit.js'])
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+});
+
+gulp.task('default', ['sass', 'scripts'], function () {
+  gulp.watch(['src/js/*.js'], ['scripts']);
+  gulp.watch(['src/scss/**/*.scss'], ['sass']);
+  gulp.watch(['src/scss/**/**/*.scss'], ['sass']);
 });
