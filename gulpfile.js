@@ -11,6 +11,7 @@ var sassPaths = [
 ];
 var jsPaths = [
   'node_modules/uikit/dist/js/uikit.js',
+  'node_modules/uikit/dist/js/uikit-icons.js'
 ];
 
 gulp.task('sass', function() {
@@ -27,7 +28,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(['node_modules/uikit/dist/js/uikit.js'])
+  gulp.src( jsPaths )
     .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))

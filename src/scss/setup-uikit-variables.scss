@@ -12,7 +12,19 @@ $global-large-gutter                  : 40px !default;
 $global-small-margin                  : $global-small-gutter !default;
 $global-medium-margin                 : $global-medium-gutter !default;
 $global-large-margin                  : $global-large-gutter !default;
+$global-font-family                   : Roboto;
+$customized-base-heading-font-family  : 'Press Start 2P';
+// $base-body-font-family                :
 
+
+// FONT HEADING SIZE
+
+$global-xxlarge-font-size             : 4.5em;
+
+
+// BUTTON SETTING
+$button-default-background             : #fff700;
+$button-primary-background             : #fff700;
 // GRID
 // HORIZONTAL base
 $grid-gutter-horizontal               : $global-gutter !default;

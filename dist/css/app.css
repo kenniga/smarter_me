@@ -27,7 +27,7 @@
  */
 html {
   /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
@@ -252,7 +252,7 @@ h4, .uk-h4,
 h5, .uk-h5,
 h6, .uk-h6 {
   margin: 0 0 20px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -272,7 +272,7 @@ h6, .uk-h6 {
  * Sizes
  */
 h1, .uk-h1 {
-  font-size: 2.625rem;
+  font-size: 4.5em;
   line-height: 1.2;
 }
 
@@ -559,7 +559,7 @@ a.uk-link-reset:hover,
 /* Primary
  ========================================================================== */
 .uk-heading-primary {
-  font-size: 2.625rem;
+  font-size: 4.5em;
   line-height: 1.2;
 }
 
@@ -2030,21 +2030,21 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-button-default {
-  background-color: #f8f8f8;
+  background-color: #fff700;
   color: #333;
 }
 
 /* Hover + Focus */
 .uk-button-default:hover,
 .uk-button-default:focus {
-  background-color: #ebebeb;
+  background-color: #e6de00;
   color: #333;
 }
 
 /* OnClick + Active */
 .uk-button-default:active,
 .uk-button-default.uk-active {
-  background-color: #dfdfdf;
+  background-color: #ccc600;
   color: #333;
 }
 
@@ -2052,21 +2052,21 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: #fff700;
   color: #fff;
 }
 
 /* Hover + Focus */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #0f7ae5;
+  background-color: #e6de00;
   color: #fff;
 }
 
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0e6ecd;
+  background-color: #ccc600;
   color: #fff;
 }
 
@@ -3414,7 +3414,7 @@ select.uk-form-width-xsmall {
 /* Title
  ========================================================================== */
 .uk-article-title {
-  font-size: 2.625rem;
+  font-size: 4.5em;
   line-height: 1.2;
 }
 
@@ -3727,7 +3727,7 @@ select.uk-form-width-xsmall {
 .uk-search-large .uk-search-input {
   height: 80px;
   background: transparent;
-  font-size: 2.625rem;
+  font-size: 4.5em;
 }
 
 /*
@@ -4112,7 +4112,7 @@ ul.uk-nav-sub {
   padding: 0 15px;
   /* 3 */
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto;
   /* 4 */
   text-decoration: none;
 }
@@ -8452,7 +8452,7 @@ iframe.uk-cover {
  */
 .uk-logo {
   font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto;
   color: #666;
   /* 1 */
   text-decoration: none;
@@ -11225,4 +11225,72 @@ iframe.uk-cover {
   .admin-bar .uk-lightbox-toolbar {
     margin-top: 32px;
   }
+}
+
+.k-date-select {
+  border: 1px solid #cecece;
+  text-align-last: center;
+  width: 80%;
+}
+
+.smrtrme__masthead-subtitle {
+  font-family: "Press Start 2P";
+  color: #FF8700 !important;
+}
+
+.smrtrme__masthead-main-headline {
+  font-weight: 700;
+}
+
+.smrtrme__masthead-scroll-section svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.smrtrme__masthead-masthead-description {
+  font-size: 1.5em;
+}
+
+.uk-overlay-primary h1.k-main-headline {
+  color: #FF8700;
+}
+
+.uk-overlay-primary .k-scroll-section {
+  background: #fc8603;
+  color: white;
+  line-height: 1;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+
+.smrtrme__speakers-main-heading {
+  font-family: "Press Start 2P";
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #353537;
+  margin-bottom: 70px;
+}
+
+.smrtrme__speakers-main-heading i {
+  color: rgba(246, 209, 0, 0.5);
+  z-index: -1;
+  -ms-transform: rotate(4deg) translate(-41%, -43%) scale(1.5);
+      transform: rotate(4deg) translate(-41%, -43%) scale(1.5);
+}
+
+.smrtrme__speakers-contents h3 {
+  font-weight: 700;
+  color: #fc8503;
+  margin-bottom: 10px;
+}
+
+.smrtrme__speakers-contents h5 {
+  font-weight: 700;
+}
+
+.smrtrme__speakers-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 30px;
 }

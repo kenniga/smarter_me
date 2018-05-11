@@ -1,0 +1,36 @@
+.smrtrme__masthead {
+    &-subtitle {
+        font-family: $customized-base-heading-font-family;
+        color: #FF8700 !important;
+    }
+    &-main-headline {
+        // font-family: $global-font-family;
+        font-weight: 700;
+    }
+    &-scroll-section {
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &-masthead-description {
+        font-size: 1.5em;
+    }
+}
+
+.uk-overlay-primary {
+    h1.k {
+        &-main-headline {
+            color: #FF8700;
+        }
+    }
+    .k {
+        &-scroll-section {
+            background: #fc8603;
+            color: white;
+            line-height: 1;
+            padding: 20px 30px;
+            text-transform: uppercase;
+        }
+    }
+}
